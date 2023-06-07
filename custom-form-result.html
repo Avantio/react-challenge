@@ -12,6 +12,7 @@
     <script>
       /* NOTE:: You can modify this script if you need to */
       const form = document.createElement('custom-react-form');
+      form.addEventListener('custom-react-submit', (data) => console.log(data));
 
       document.body.appendChild(form);
     </script>

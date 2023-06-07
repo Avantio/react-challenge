@@ -26,13 +26,38 @@ The form will have three steps:
 
 We can only have one step at a time in the screen, we should have to navigate between them.
 
-In the first step we will ask for the accommodation data as: name, location, description, type and two pictures.
+### First step
+<img src="./doc/assets/step-1.png"  height="300">
 
-In the second step we will ask for the owner's details as: name, email and phone number.
+We will ask for the accommodation data as: name, location, description, type and pictures.
 
-In the third step we will display a summary of the previously submitted data and a random success/failure message or a validation error message, all the fields are required.
+Field restrictions:
+- Name: Required, length between 4 and 128 characters, numbers are not allowed.
+- Address: Required, length between 4 and 128 characters.
+- Description: Optional, if present, length between 128 and 2048 characters.
+- Type: Required, only one of these values is allowed: apartment, villa or house.
+- Photos: optional, if present, a maximum of two photos are allowed, dimension restrictions of 500x500.
+
+The "Next" button is disabled until form completion and all validations are passed without problems, the field validation appears when you focus out the input.
+
+### Second step
+<img src="./doc/assets/step-2.png"  height="300">
+
+We will ask for the owner's details such as: name, email and phone number.
+
+Field restrictions:
+- Name: Required, Minimum 4 characters and maximum 64.
+- Email: Required, must be an email containing "@" and a domain before the "@".
+- Phone number: Optional, numbers only, up to 9 digits.
+
+The submit button is disabled until form completion and all validations passed without problems, the field validation appears when focus out the input.
+
+### Third step
+<img src="./doc/assets/step-3.png"  height="300">
+
+In this step we will show a summary of the form, the submit button should emit an event to the DOM with all the information of this form.
 
 ## Additional considerations
 We strongly recommend following the best practices for React and TailwindCSS.
 
-The design and position of the elements in the forms are up to you but we appreciate an intuitive and easy to use user interface.
+The design and position of the elements in the forms are up to you but we appreciate an intuitive and easy to use user interface, take consideration about field requirements to prevent user mistakes.
