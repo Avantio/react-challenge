@@ -61,3 +61,6 @@ In this step we will show a summary of the form, the submit button should emit a
 We strongly recommend following the best practices for React and TailwindCSS.
 
 The design and position of the elements in the forms are up to you but we appreciate an intuitive and easy to use user interface, take consideration about field requirements to prevent user mistakes.
+
+## How to deliver the test
+You can download the repository and push to a new one, then send us the link to your tech test. It's important for us to have the link as soon as possible, even if the test is not finished, you have to send us the link to the repository when it's created.
