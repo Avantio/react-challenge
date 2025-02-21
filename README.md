@@ -15,7 +15,6 @@ The components needs to be exported as CustomElement and fully integrated in the
 ## Technical requirements
 - You have to use React + Typescript combination.
 - You must use TailwindCSS.
-- We strongly recommend using of Redux for state management, we also use it in our components.
 - The output of this component is a CustomElement (WebComponent).
 
 ## Expected functionality
